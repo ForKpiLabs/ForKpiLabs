@@ -1,5 +1,5 @@
 <code>🎓 Student: KPI / IO-05</code>
-<code>⚪ Community: Banderivska Mafia</code>
+<code>⚪ Community: Bandera Mafia</code>
 <code>👷 Speciality: Computer engineer</code><br>
 <code>💡 [Skills](SKILLS.md)</code>
 <code>🧻 [Projects](PROJECTS.md)</code>
