@@ -1,6 +1,6 @@
 <code>🎓 Student: KPI / IO-05</code>
 <code>⚪ Community: Banderivska Mafia</code>
-<code>👷 Speciality: Computer engineer / Backend</code><br>
+<code>👷 Speciality: Computer engineer</code><br>
 <code>💡 [Skills](SKILLS.md)</code>
 <code>🧻 [Projects](PROJECTS.md)</code>
 <code>📢 [Public talks: 0](TALKS.md)</code>
