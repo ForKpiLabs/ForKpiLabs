@@ -10,7 +10,7 @@
 | 🟩 identifier        | 🟩 loops              | 🟩 function           | 🟩 instance         | 🟦 code review       |
 | 🟩 variable          | 🟩 assignment         | 🟩 return             | 🟩 object           | 🟦 antipatterns      |
 | 🟩 constant          | 🟨 prototype          | 🟦 signature          | 🟩 collection       | 🟦 paradigm          |
-| 🟩 scalar            | 🟩 class              | 🟩 argument           | 🟩 hash table       | 🟦 algorithm         |
+| 🟩 scalar            | 🟩 class              | 🟩 argument           | 🟩 hash table       | 🟩 algorithm         |
 | 🟩 literal           | 🟩 while              | 🟩 parameter          | 🟩 linked list      | 🟦 magic numbers     |
 | 🟩 expression        | 🟦 do..while          | 🟩 pure function      | 🟩 queue            | 🟦 hardcode          |
 | 🟩 heap              | 🟩 for                | 🟩 lambda             | 🟩 stack            | 🟦 complexity        |
@@ -20,8 +20,8 @@
 | 🟩 flag              | 🟦 throw              | ⬜️ curry              | 🟨 iterator         | ⬜️ not invented here |
 | 🟩 lexical scope     | 🟩 try..except        | 🟦 chaining           | 🟨 typed arrays     | 🟦 dead code         |
 | 🟦 code block        | 🟦 equality operators | 🟦 higher order       | 🟨 Map              | 🟦 unreachable code  |
-| 🟨 Object            | 🟩 logical operators  | 🟦 callback           | 🟨 Set              | 🟦 duplicate code    |
-| 🟨 this              | 🟦 bitwise operators  | 🟦 listener           | ⬜️ weak collections | 🟦 exception         |
+| 🟨 Object            | 🟩 logical operators  | 🟦 callback           | 🟨 Set              | 🟩 duplicate code    |
+| 🟨 this              | 🟦 bitwise operators  | 🟦 listener           | ⬜️ weak collections | 🟩 exception         |
 | 🟨 arrow function    | 🟩 break, continue    | ⬜️ pipe               | ⬜️ Proxy            | 🟦 return early      |
 | 🟨 generator         | 🟩 switch             | ⬜ compose            | ⬜️ Symbol           | 🟦 linter            |
 | 🟨 async function    | 🟨 new Error          | ⬜️ memoize            | 🟨 string parsing   | ⬜️ prettier          |
@@ -34,13 +34,13 @@
 
 ## Multi-paradigm programming
 
-| Theory                         | OOP basics            | Abstractions         | Patterns                 |
-|--------------------------------|-----------------------|----------------------|--------------------------|
-| 🟦 Procedural programming      | 🟦 constructor        | ⬜ struct, record    | 🟦 Singleton             |
+| Theory                         | OOP basics            | Abstractions         | Patterns                  |
+|--------------------------------|-----------------------|----------------------|---------------------------|
+| 🟩 Procedural programming      | 🟦 constructor        | ⬜ struct, record    | 🟦 Singleton            |
 | 🟦 Imperative programming      | 🟦 new                | ⬜ Mutable state     |                          |
 | 🟦 Structured programming      | 🟦 Static method      | ⬜ Immutable state   |                          |
 | 🟦 Non-structured programming  | 🟦 Method             | ⬜ Enum              |                          |
-| 🟦 Functional programming      | 🟦 Async method       | 🟦 Linked list       |                          |
+| 🟩 Functional programming      | 🟦 Async method       | 🟦 Linked list       |                          |
 | 🟦 Prototype-based programming | 🟦 Getters, Setters   | 🟦 Doubly list       |                          |
 | 🟦 Object-oriented programming | 🟦 Public fields      | 🟦 Unrolled list     |                          |
 | ⬜ Object-based programming    | 🟦 Private fields     | 🟦 Circular list     |                          |
@@ -83,12 +83,58 @@
 
 ## Macine Learning 
 
-|               |          Grouping             ||         Grouping 2         ||  Not Grouped    |
-| First Header  | Second Header | Third Header   | Forth Header | Fifth Header | Sixth Header    |
-| ------------- | :-----------: | -------------: | :----------: | :----------: | --------------- |
-| Tall Cell     |          *Long Cell*          ||         *Long Long Cell*                    |||
-| ^^            |   **Bold**    | 1. first item  | *Italic*     | 3. third item | + first point  |\
-| ^^            |               | 1. second item |              | 1. forth item | + second point |
+**Supervised**
 
-| New section   |     More      |         Data   | ... - -- --- |||
-| And more      | With an escaped \|          || "Try 'quotes' in quotes "         |||
+|Classification|Regression|Dimensionality Reduction|
+|--------------|----------|------------------------|
+|🟩KNN Classification|🟩KNN Regression|🟦LDA       |
+|🟦XGBoost     |🟦MARS    |                        |
+|🟦AdaBoost    |🟦SVR     |                        |
+|🟦Gradient Boosted Trees|🟦LOWESS|                |
+|🟩Random Forest Classification|🟩Random Forest Regression||
+|🟩Decision Tree Classification|🟦Decision Tree Regression|
+|🟦SVM         |          |                        |
+|🟩Naive Bayes |          |                        | 
+|🟩Logistic Regression|🟩Linear Regression|        |
+
+
+**Unsupervised**
+
+|Clustering   |Dimensionality Reduction |Association  |
+|-------------|--------------|------------------------|
+|🟩K-Means    |🟦LLE         |🟦Apriori               |
+|🟦GMM        |🟦t-SNE       |                        |
+|🟦HAC        |🟦Isomap Embendding|                   |
+|🟦DBSCAN     |🟦MDS         |                        |
+|🟦PCA        |              |                        |
+|🟦UMAP       |              |                        |
+
+
+|**Semi-Supervised**|
+|-------------------|
+|🟦Label Spreading  |
+|🟦Self Training Classifier|
+|🟦Label Propagation|
+
+
+
+
+**Neural Networks**
+
+|Feed Forward NN| Recurent NN|Auto Encoders|Generative Adversarial Networks|Convolutional NN|
+|---------------|------------|-------------|-------------------------------|----------------|
+|🟦Deep Feed Forward|🟦RNN  |🟦Sparse AE    |🟦Wasserstein GAN            |🟦Transposed CN |
+|🟦Feed Forward |🟦LSTM     |🟦Denoising AE |🟦Cycle GAN                  |🟦Deep CN       |
+|               |🟦GRU      |🟦Variatoinal AE|🟦Deep Conolutional GAN     |                |
+|               |            |🟦Undercomplete AE|🟦Conditional GAN        |                |
+
+
+**Reinfocement**
+
+|Value-Based Methods|Policy-Based Methods|
+|-------------------|--------------------|
+|🟦Deep Q NN        |🟦Policy Gradient(REINFORCE)|
+|🟦SARSA            |🟦Proximal Policy Optimization|
+|🟦Q-Learning       |                    |
+
+
